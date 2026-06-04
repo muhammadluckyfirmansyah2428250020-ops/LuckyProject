@@ -1,9 +1,9 @@
 @extends('main')
 
-@section('title', 'Tambah Program Studi')
+@section('title', 'Tambah Mahasiswa')
 
 @section('content')
-    <form action="{{ route('prodi.store') }}"
+    <form action="{{ route('mahasiswa.store') }}"
     method="post">
         <div class="form-group">
             <label for="">Nama Program Studi</label>
@@ -15,5 +15,8 @@
         @enderror
 
         <div class="form-group">
-            <label for="">Singkatan</label>
-            <input type="text" name="singkatan"
+            <label for="">Foto</label>
+            <input type="file" name="Foto"
+            class="form-control" value="{{ old('foto') }}">
+
+            

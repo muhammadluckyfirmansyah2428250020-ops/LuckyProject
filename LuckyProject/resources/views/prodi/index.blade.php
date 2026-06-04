@@ -1,5 +1,7 @@
 @extends('main')
 
+@section('title', 'Mahasiswa')
+
 @section('content')
     <hi>Fakultas</h1>
 
